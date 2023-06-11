@@ -1,0 +1,18 @@
+
+@mixin headingFont{
+    font-family: $font-primary;
+    color:$clr-neutral-white;
+    line-height: 3rem;
+    @include sm{
+        margin-top: $margin-before-headline-sm;
+        margin-bottom: $margin-after-headline-sm;
+    }
+    @include md{
+        margin-top: $margin-before-headline-md;
+        margin-bottom: $margin-after-headline-md;
+    }
+    @include lg{
+        margin-top: $margin-before-headline-lg;
+        margin-bottom: $margin-after-headline-lg;
+    }
+}

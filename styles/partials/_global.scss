@@ -1,0 +1,277 @@
+@import "./_colors.scss";
+@import "./_font.scss";
+@import "./_layout.scss";
+@import "./_mixins.scss";
+@import "./variables";
+
+//Body
+body {
+  background-color: $clr-surface-100;
+  margin: 0;
+}
+//Headings
+h1 {
+  @include headingFont;
+  @include sm {
+    font-size: 2rem;
+  }
+  @include md {
+    font-size: 2.5rem;
+  }
+  @include lg {
+    font-size: 3.125rem;
+  }
+}
+h2 {
+  @include headingFont;
+  @include sm {
+    font-size: 1.75rem;
+  }
+  @include md {
+    font-size: 2rem;
+  }
+  @include lg {
+    font-size: 2.75rem;
+  }
+}
+h3 {
+  @include headingFont;
+  @include sm {
+    font-size: 1.5rem;
+  }
+  @include md {
+    font-size: 1.75rem;
+  }
+  @include lg {
+    font-size: 2.5rem;
+  }
+}
+h4 {
+  @include headingFont;
+  @include sm {
+    font-size: 1.25rem;
+  }
+  @include md {
+    font-size: 1.5rem;
+  }
+  @include lg {
+    font-size: 2.25rem;
+  }
+}
+h5 {
+  @include headingFont;
+  @include sm {
+    font-size: 1rem;
+  }
+  @include md {
+    font-size: 1.25rem;
+  }
+  @include lg {
+    font-size: 2rem;
+  }
+}
+//P text
+p {
+  font-family: $font-secondary;
+  color: $clr-neutral-white;
+  @include sm {
+    font-size: 0.9rem;
+  }
+  @include md {
+    font-size: 1rem;
+  }
+  @include lg {
+    font-size: 1rem;
+  }
+}
+//Links
+a {
+  font-family: $font-secondary;
+  text-decoration: none;
+  font-style: italic;
+  background-color: $clr-primary-300;
+  color: $clr-surface-100;
+  @include sm {
+    font-size: 0.9rem;
+  }
+  @include md {
+    font-size: 1rem;
+  }
+  @include lg {
+    font-size: 1rem;
+  }
+}
+//Buttons
+button {
+  font-family: $font-secondary;
+  font-weight: bold;
+  background-color: $clr-primary-500;
+  color: $clr-surface-100;
+  border: none;
+  border-radius: $border-radius-button;
+  padding: $padding-button-vertical $padding-button-horizontal;
+  width: $width-button;
+  cursor: pointer;
+  @include sm {
+    font-size: 1rem;
+  }
+  @include md {
+    font-size: 1.25rem;
+  }
+  @include lg {
+    font-size: 1.25rem;
+  }
+}
+//Header
+header {
+  background: linear-gradient(
+    135deg,
+    rgba($clr-surface-300, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.37);
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 $padding-between-components-sm;
+  box-sizing: border-box;
+  backdrop-filter: blur(0.625rem);
+  @include md {
+    padding: 0 $padding-between-components-md;
+    align-items: end;
+    position: sticky;
+    top: 0;
+  }
+  @include lg {
+    flex-direction: row;
+    padding: 0 $padding-between-components-lg;
+  }
+}
+
+//Content
+main {
+  margin: 0 auto;
+  padding: 0 $padding-between-components-sm;
+  @include md {
+    padding: 0 $padding-between-components-md;
+  }
+  @include lg {
+    padding: 0 $padding-between-components-lg;
+  }
+}
+
+//Navbar
+.nav {
+  width: 100%;
+  display: none;
+  @include md {
+    display: contents;
+  }
+  &--mobile{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    @include md {
+        display: none;
+      }
+  }
+  &__list {
+    display: flex;
+    justify-content: end;
+    gap: calc(2 * $padding-between-components-sm);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    &--mobile{
+        @extend .nav__list;
+        display: block;
+        width: 100%;
+    }
+  }
+  &__item {
+    list-style: none;
+    text-align: center;
+    &--mobile{
+        @extend .nav__item;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+  &__link {
+    background-color: transparent;
+    color: $clr-primary-300;
+    font-style: normal;
+    font-weight: bold;
+    min-width: 10%;
+    box-sizing: border-box;
+    height: 100%;
+    padding: $padding-between-components-sm;
+    display: flex;
+    align-items: center;
+    @include md {
+      padding: $padding-between-components-md;
+    }
+    @include lg {
+      padding: $padding-between-components-lg;
+    }
+    &--active {
+      @extend .nav__link;
+      border-bottom: $clr-primary-300 solid $border-width-nav-link;
+    }
+    &:hover {
+      @extend .nav__link--active;
+    }
+    &--mobile{
+        @extend .nav__link;
+        &:hover {
+            border: none;
+            color: $clr-neutral-white;
+          }
+    }
+  }
+}
+
+//Site Logo
+.site-logo {
+  aspect-ratio: 16/9;
+  max-width: 10rem;
+}
+
+//Hamburger
+.hamburger {
+    align-self: center;
+    width: calc(100% - 10rem);
+    display: flex;
+    justify-content: end;
+  @include md {
+    display: none;
+  }
+  &__bar {
+    display: block;
+    width: 1.5625rem;
+    height: 0.1875rem;
+    margin: 0.3125rem auto;
+    transition: all 0.3s ease-in-out;
+    background-color: $clr-primary-100;
+    border-radius: 1rem;
+  }
+  &__bar-container.active{
+    .hamburger__bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger__bar:nth-child(1){
+        transform: translateY(0.5rem) rotate(45deg);
+    }
+    .hamburger__bar:nth-child(3){
+        transform: translateY(-0.5rem) rotate(-45deg);
+    }
+  }
+}
+
+//Hidden elements
+.hidden{
+    display: none;
+}

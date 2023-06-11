@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img class="site-logo" src="./assets/logos/site-logo.png" alt="CreditCheck Logo">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link--active" href="">Credit Card Checker</a></li>
+                <li class="nav__item"><a class="nav__link" href="">How does it work?</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Card Numbers</a></li>
+                <li class="nav__item"><a class="nav__link" href="">About</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="hamburger__bar-container">
+                <span class="hamburger__bar"></span>
+                <span class="hamburger__bar"></span>
+                <span class="hamburger__bar"></span>
+            </div>
+        </div>
+        <nav class="nav--mobile hidden">
+            <ul class="nav__list--mobile">
+                <li class="nav__item--mobile"><a class="nav__link--mobile" href="">Credit Card Checker</a></li>
+                <li class="nav__item--mobile"><a class="nav__link--mobile" href="">How does it work?</a></li>
+                <li class="nav__item--mobile"><a class="nav__link--mobile" href="">Card Numbers</a></li>
+                <li class="nav__item--mobile"><a class="nav__link--mobile" href="">About</a></li>
+            </ul>
+        </nav>
+        <script src="./scripts/responsiveNav.js"></script>
+    </header>
+    <main>
+        <section class="credit-check">
+            <div>
+                <h1>Check if a credit card number is valid</h1>
+            </div>
+            <div class="credit-card">
+                <div class="credit-card__base-information">
+                    <h3 class="credit-card__title">Credit Card</h3>
+                    <h4 class="credit-card__bank">Bank XYZ</h4>
+                    <img class="credit-card__chip"src="./assets/images/credit-card-chip.png" alt="Credit Card Chip">
+                </div>
+                <input class="credit-card__input" type="number" placeholder="Card Number">
+                <div class="credit-card__placeholder-information">
+                    <div class="credit-card__valid-container">
+                        <p class="credit-card__placeholder-title">Valid <br>thru</p>
+                        <p class="credit-card__placeholder-text">01/2028</p>
+                        <p class="credit-card__placeholder-name">John A. Smith</p>
+                    </div>
+                    <div class="credit-card__provider-image">
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
