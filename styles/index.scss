@@ -97,4 +97,7 @@
     justify-content:start;
     margin-top: $padding-between-components-sm;
     gap:$padding-between-components-sm;
+    &__header{
+        text-align: center;
+    }
 }

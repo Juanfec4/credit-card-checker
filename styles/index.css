@@ -421,6 +421,11 @@ main {
   display: none;
 }
 
+.color-text {
+  color: #6649f5;
+  font-style: italic;
+}
+
 .credit-card {
   background-color: #7d5df7;
   border-radius: 1rem;
@@ -522,4 +527,7 @@ main {
   justify-content: start;
   margin-top: 1rem;
   gap: 1rem;
+}
+.credit-check__header {
+  text-align: center;
 }
