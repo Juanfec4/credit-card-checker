@@ -1,7 +1,12 @@
 @import './partials/_global.scss';
 
 .credit-card{
-    background-color: $clr-primary-200;
+      background: linear-gradient(
+    135deg,
+    rgba($clr-primary-200, 1),
+    rgba($clr-primary-400, 1)
+  );
+    backdrop-filter: blur(0.625rem);
     border-radius: $border-radius-credit-card;
     padding: $padding-between-components-sm;
     max-width: $width-credit-card;
