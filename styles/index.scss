@@ -143,6 +143,14 @@
     padding: $padding-between-components-sm;
     border-radius: $border-radius-result-card;
     width: 100%;
+    &--valid {
+      @extend .result-card__container;
+      background-color: $clr-success;
+    }
+    &--invalid {
+      @extend .result-card__container;
+      background-color: $clr-error;
+    }
   }
 
   &__text {

@@ -579,11 +579,17 @@ main {
     max-width: 27rem;
   }
 }
-.result-card__container {
+.result-card__container, .result-card__container--invalid, .result-card__container--valid {
   background-color: #2f2b3a;
   padding: 1rem;
   border-radius: 1rem;
   width: 100%;
+}
+.result-card__container--valid {
+  background-color: #4caf50;
+}
+.result-card__container--invalid {
+  background-color: #e91e63;
 }
 .result-card__text {
   text-align: center;
