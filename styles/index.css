@@ -431,7 +431,6 @@ main {
   backdrop-filter: blur(0.625rem);
   border-radius: 1rem;
   padding: 1rem;
-  max-width: 28rem;
   max-height: 20rem;
   aspect-ratio: 16/9;
   box-sizing: border-box;
@@ -440,17 +439,25 @@ main {
 }
 @media (min-width: 0px) {
   .credit-card {
-    scale: 0.75;
+    max-width: fit-content;
+    min-height: fit-content;
+    max-height: 15rem;
   }
 }
 @media (min-width: 768px) {
   .credit-card {
-    scale: 1;
+    max-width: 28rem;
   }
 }
 .credit-card__chip {
   width: 3.125rem;
   margin: 0 auto 0 1rem;
+}
+@media (min-width: 0px) {
+  .credit-card__chip {
+    margin-left: 0;
+    transform: scale(0.75);
+  }
 }
 .credit-card__base-information {
   width: 100%;
@@ -462,11 +469,21 @@ main {
   text-align: start;
   font-size: 1.5rem;
 }
+@media (min-width: 0px) {
+  .credit-card__title {
+    margin: 0;
+  }
+}
 .credit-card__bank {
   width: 50%;
   text-align: end;
   font-style: italic;
   font-size: 1.25rem;
+}
+@media (min-width: 0px) {
+  .credit-card__bank {
+    margin: 0;
+  }
 }
 .credit-card__input {
   width: 80%;
@@ -476,6 +493,11 @@ main {
   outline: none;
   font-family: "DM Sans", sans-serif;
   color: #ffffff;
+}
+@media (min-width: 0px) {
+  .credit-card__input {
+    margin-top: 0;
+  }
 }
 .credit-card__input::placeholder {
   font-family: "DM Sans", sans-serif;
@@ -498,6 +520,11 @@ main {
   font-size: 0.9rem;
   padding-right: 1rem;
 }
+@media (min-width: 0px) {
+  .credit-card__placeholder-title {
+    margin-top: 0;
+  }
+}
 .credit-card__placeholder-text {
   margin-bottom: 0;
   font-size: 0.9rem;
@@ -517,6 +544,11 @@ main {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+@media (min-width: 0px) {
+  .credit-card__provider-image {
+    transform: scale(0.75);
+  }
 }
 
 .credit-check {
