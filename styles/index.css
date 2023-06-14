@@ -422,12 +422,12 @@ main {
 }
 
 .color-text {
-  color: #6649f5;
+  color: #ffffff;
   font-style: italic;
 }
 
 .credit-card {
-  background: linear-gradient(135deg, #7d5df7, #a384fa);
+  background: linear-gradient(135deg, #6649f5, #a384fa);
   backdrop-filter: blur(0.625rem);
   border-radius: 1rem;
   padding: 1rem;
@@ -563,4 +563,5 @@ main {
 }
 .credit-check__header {
   text-align: center;
+  color: #c4acfd;
 }
