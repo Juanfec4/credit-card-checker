@@ -1,129 +1,151 @@
-@import './partials/_global.scss';
+@import "./partials/_global.scss";
 
-.credit-card{
-      background: linear-gradient(
+.credit-card {
+  background: linear-gradient(
     135deg,
     rgba($clr-primary-100, 1),
     rgba($clr-primary-400, 1)
   );
-    backdrop-filter: blur(0.625rem);
-    border-radius: $border-radius-credit-card;
-    padding: $padding-between-components-sm;
-    max-height: $height-credit-card;
-    aspect-ratio: 16/9;
-    box-sizing: border-box;
+  backdrop-filter: blur(0.625rem);
+  border-radius: $border-radius-credit-card;
+  padding: $padding-between-components-sm;
+  max-height: $height-credit-card;
+  aspect-ratio: 16/9;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  @include sm {
+    max-width: fit-content;
+    min-height: fit-content;
+    max-height: calc($height-credit-card - 5rem);
+  }
+  @include md {
+    max-width: $width-credit-card;
+  }
+  &__chip {
+    width: $width-chip;
+    margin: 0 auto 0 $padding-between-components-sm;
+    @include sm {
+      margin-left: 0;
+      transform: scale(0.75);
+    }
+  }
+  &__base-information {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    @include sm{
-        max-width: fit-content;
-        min-height: fit-content;
-        max-height: calc($height-credit-card - 5rem);
+  }
+  &__title {
+    width: 50%;
+    text-align: start;
+    font-size: 1.5rem;
+    @include sm {
+      margin: 0;
     }
-    @include md{
-        max-width: $width-credit-card;
+  }
+  &__bank {
+    width: 50%;
+    text-align: end;
+    font-style: italic;
+    font-size: 1.25rem;
+    @include sm {
+      margin: 0;
     }
-    &__chip{
-        width: $width-chip;
-        margin: 0 auto 0 $padding-between-components-sm;
-        @include sm{
-            margin-left: 0;
-            transform: scale(0.75);
-        }
+  }
+  &__input {
+    width: 80%;
+    margin: $padding-between-components-sm auto 0;
+    background-color: $clr-primary-100;
+    border: 0;
+    outline: none;
+    font-family: $font-secondary;
+    color: $clr-neutral-white;
+    @include sm {
+      margin-top: 0;
     }
-    &__base-information{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+    &::placeholder {
+      font-family: $font-secondary;
+      color: $clr-neutral-white;
     }
-    &__title{
-        width: 50%;
-        text-align: start;
-        font-size: 1.5rem;
-        @include sm{
-            margin: 0;
-        }
+  }
+  &__placeholder-information {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__valid-container {
+    display: flex;
+    width: 50%;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  &__placeholder-title {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    padding-right: $padding-between-components-sm;
+    @include sm {
+      margin-top: 0;
     }
-    &__bank{
-        width: 50%;
-        text-align: end;
-        font-style: italic;
-        font-size: 1.25rem;
-        @include sm{
-            margin: 0;
-        }
+  }
+  &__placeholder-text {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }
+  &__placeholder-name {
+    width: 100%;
+    text-align: start;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  &__provider-image {
+    width: 4.5rem;
+    height: 4.5rem;
+    color: red;
+    background-image: url("../assets/logos/mastercard.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include sm {
+      transform: scale(0.75);
     }
-    &__input{
-        width: 80%;
-        margin: $padding-between-components-sm auto 0;
-        background-color: $clr-primary-100;
-        border: 0;
-        outline: none;
-        font-family: $font-secondary;
-        color: $clr-neutral-white;
-        @include sm{
-            margin-top: 0;
-        }
-        &::placeholder{
-            font-family: $font-secondary;
-            color: $clr-neutral-white;
-        }
-    }
-    &__placeholder-information{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    &__valid-container{
-        display: flex;
-        width: 50%;
-        justify-content: start;
-        flex-wrap: wrap;
-    }
-    &__placeholder-title{
-        margin-bottom: 0;
-        font-size: 0.9rem;
-        padding-right: $padding-between-components-sm;
-        @include sm{
-            margin-top: 0;
-        }
-    }
-    &__placeholder-text{
-        margin-bottom: 0;
-        font-size: 0.9rem;
-    }
-    &__placeholder-name{
-        width: 100%;
-        text-align: start;
-        margin-top: 0;
-        font-weight: bold;
-        font-size: 0.9rem;
-    }
-    &__provider-image{
-        width: 4.5rem;
-        height: 4.5rem;
-        color: red;
-        background-image: url("../assets/logos/mastercard.png");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        @include sm{
-            transform: scale(0.75);
-        }
-    }
+  }
 }
 
-.credit-check{
+.credit-check {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin-top: $padding-between-components-sm;
+  gap: $padding-between-components-sm;
+  &__header {
+    text-align: center;
+    color: $clr-primary-600;
+  }
+}
+
+.result-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: $margin-between-components-df;
+  max-width: calc($width-credit-card - $margin-between-components-df);
+  width: 100%;
+  @include md {
+    max-width: calc($width-credit-card - $margin-between-components-df);
+  }
+  &__container {
+    background-color: $clr-surface-200;
+    padding: $padding-between-components-sm;
+    border-radius: $border-radius-result-card;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:start;
-    margin-top: $padding-between-components-sm;
-    gap:$padding-between-components-sm;
-    &__header{
-        text-align: center;
-        color: $clr-primary-600;
-    }
+  }
+
+  &__text {
+    text-align: center;
+  }
 }

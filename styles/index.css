@@ -565,3 +565,26 @@ main {
   text-align: center;
   color: #c4acfd;
 }
+
+.result-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  max-width: 27rem;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .result-card {
+    max-width: 27rem;
+  }
+}
+.result-card__container {
+  background-color: #2f2b3a;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+.result-card__text {
+  text-align: center;
+}
