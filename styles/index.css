@@ -540,7 +540,6 @@ main {
   width: 4.5rem;
   height: 4.5rem;
   color: red;
-  background-image: url("../assets/logos/mastercard.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -593,4 +592,32 @@ main {
 }
 .result-card__text {
   text-align: center;
+}
+
+.information-card {
+  max-width: 27rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.information-card__container {
+  background-color: #2f2b3a;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+.information-card__heading {
+  margin-top: 0;
+  text-align: center;
+  color: #c4acfd;
+}
+.information-card__subheading {
+  font-weight: 600;
+  font-style: italic;
+}
+.information-card__result {
+  font-weight: 400;
+  font-style: normal;
+  color: #c4acfd;
 }

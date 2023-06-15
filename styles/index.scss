@@ -103,7 +103,6 @@
     width: 4.5rem;
     height: 4.5rem;
     color: red;
-    background-image: url("../assets/logos/mastercard.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -155,5 +154,33 @@
 
   &__text {
     text-align: center;
+  }
+}
+
+.information-card{
+  max-width: calc($width-credit-card - $margin-between-components-df);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__container{
+    background-color: $clr-surface-200;
+    padding: $padding-between-components-sm;
+    border-radius: $border-radius-result-card;
+    width: 100%;
+  }
+  &__heading{
+    margin-top: 0;
+    text-align: center;
+    color: $clr-primary-600;
+  }
+  &__subheading{
+    font-weight: 600;
+    font-style: italic;
+  }
+  &__result{
+    font-weight: 400;
+    font-style: normal;
+    color: $clr-primary-600;
   }
 }
