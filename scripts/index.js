@@ -161,6 +161,7 @@ function checkCardIssuer(number) {
       }
     }
   }
+  CARD_PROVIDER.style.backgroundImage = "none";
   return { name: "Unknown Issuer", prefix: 0, lengths: null, image: null };
 }
 
