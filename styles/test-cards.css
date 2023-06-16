@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 body {
-  background-color: #1a1625;
+  background-color: #211938;
   margin: 0;
 }
 
@@ -225,7 +225,7 @@ a {
   text-decoration: none;
   font-style: italic;
   background-color: #9170f9;
-  color: #1a1625;
+  color: #211938;
 }
 @media (min-width: 0px) {
   a {
@@ -247,7 +247,7 @@ button {
   font-family: "DM Sans", sans-serif;
   font-weight: bold;
   background-color: #b498fc;
-  color: #1a1625;
+  color: #211938;
   border: none;
   border-radius: 1.25rem;
   padding: 0.25rem 1rem;
@@ -272,7 +272,7 @@ button {
 
 header {
   z-index: 1;
-  background-color: #2f2b3a;
+  background-color: #372e4c;
   box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.37);
   justify-content: space-between;
   display: flex;
@@ -456,7 +456,7 @@ main {
 }
 .card-gallery__issuer-card {
   height: auto;
-  background-color: #2f2b3a;
+  background-color: #372e4c;
   padding: 1rem;
   border-radius: 1rem;
   width: 20rem;
@@ -485,8 +485,8 @@ main {
   justify-content: space-between;
 }
 .card-gallery__copy-button {
-  color: #2f2b3a;
-  background-color: #b498fc;
+  color: #372e4c;
+  background-color: #9170f9;
   font-size: 0.7rem;
   height: 2rem;
   width: auto;

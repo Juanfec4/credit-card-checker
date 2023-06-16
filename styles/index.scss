@@ -123,7 +123,6 @@
   gap: $padding-between-components-sm;
   &__header {
     text-align: center;
-    color: $clr-primary-600;
   }
 }
 
@@ -138,7 +137,7 @@
     max-width: calc($width-credit-card - $margin-between-components-df);
   }
   &__container {
-    background-color: $clr-surface-200;
+    background-color: $clr-surface-100;
     padding: $padding-between-components-sm;
     border-radius: $border-radius-result-card;
     width: 100%;
@@ -172,7 +171,6 @@
   &__heading{
     margin-top: 0;
     text-align: center;
-    color: $clr-primary-600;
   }
   &__subheading{
     font-weight: 600;
@@ -181,6 +179,6 @@
   &__result{
     font-weight: 400;
     font-style: normal;
-    color: $clr-primary-600;
+    color: $clr-primary-200;
   }
 }

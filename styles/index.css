@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 body {
-  background-color: #1a1625;
+  background-color: #211938;
   margin: 0;
 }
 
@@ -225,7 +225,7 @@ a {
   text-decoration: none;
   font-style: italic;
   background-color: #9170f9;
-  color: #1a1625;
+  color: #211938;
 }
 @media (min-width: 0px) {
   a {
@@ -247,7 +247,7 @@ button {
   font-family: "DM Sans", sans-serif;
   font-weight: bold;
   background-color: #b498fc;
-  color: #1a1625;
+  color: #211938;
   border: none;
   border-radius: 1.25rem;
   padding: 0.25rem 1rem;
@@ -272,7 +272,7 @@ button {
 
 header {
   z-index: 1;
-  background-color: #2f2b3a;
+  background-color: #372e4c;
   box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.37);
   justify-content: space-between;
   display: flex;
@@ -562,7 +562,6 @@ main {
 }
 .credit-check__header {
   text-align: center;
-  color: #c4acfd;
 }
 
 .result-card {
@@ -579,7 +578,7 @@ main {
   }
 }
 .result-card__container, .result-card__container--invalid, .result-card__container--valid {
-  background-color: #2f2b3a;
+  background-color: #211938;
   padding: 1rem;
   border-radius: 1rem;
   width: 100%;
@@ -602,7 +601,7 @@ main {
   justify-content: center;
 }
 .information-card__container {
-  background-color: #2f2b3a;
+  background-color: #372e4c;
   padding: 1rem;
   border-radius: 1rem;
   width: 100%;
@@ -610,7 +609,6 @@ main {
 .information-card__heading {
   margin-top: 0;
   text-align: center;
-  color: #c4acfd;
 }
 .information-card__subheading {
   font-weight: 600;
@@ -619,5 +617,5 @@ main {
 .information-card__result {
   font-weight: 400;
   font-style: normal;
-  color: #c4acfd;
+  color: #7d5df7;
 }
