@@ -1,4 +1,5 @@
 import { appendElement, clearChildren } from "./helpers.js";
+import { CARD_ISSUERS } from "./issuerObjects.js";
 
 const RESULT_TEXT = document.querySelector(".result-card__text");
 const RESULT_CARD = document.querySelector(".result-card__container");
@@ -9,7 +10,6 @@ const INFORMATION_RESULTS = document.querySelector(
 );
 
 const DEFAULT_CLASS = RESULT_CARD.classList.value;
-const ISSUER_IMAGE_ROOT_PATH = "./assets/logos/";
 const MIN_CARD_LENGTH = 12;
 
 const MAJOR_INDUSTRY_IDENTIFIERS = {
@@ -25,46 +25,6 @@ const MAJOR_INDUSTRY_IDENTIFIERS = {
   9: "For the appointment of national standards bodies",
 };
 
-function Issuer(name, prefixNumbers, lengths, image) {
-  this.name = name;
-  this.prefixNumbers = prefixNumbers;
-  this.lengths = lengths;
-  this.image = image;
-}
-
-const CARD_ISSUERS = [
-  new Issuer(
-    "American Express",
-    [34, 37],
-    [15],
-    `${ISSUER_IMAGE_ROOT_PATH}amex.png`
-  ),
-  new Issuer(
-    `Diner's Club`,
-    [300, 301, 302, 303, 304, 305, 309, 36, 38, 39],
-    [14, 15],
-    `${ISSUER_IMAGE_ROOT_PATH}diners.png`
-  ),
-  new Issuer(
-    `Discover`,
-    [6011, 64, 65, 622126, 622925],
-    [16],
-    `${ISSUER_IMAGE_ROOT_PATH}discover.png`
-  ),
-  new Issuer(
-    `JCB`,
-    [35, 3088, 3096, 3112, 3158, 3337],
-    [16],
-    `${ISSUER_IMAGE_ROOT_PATH}jcb.png`
-  ),
-  new Issuer(
-    `MasterCard`,
-    [51, 52, 53, 54, 55],
-    [16],
-    `${ISSUER_IMAGE_ROOT_PATH}mastercard.png`
-  ),
-  new Issuer(`Visa`, [4], [13, 16, 19], `${ISSUER_IMAGE_ROOT_PATH}visa.png`),
-];
 
 function logResult(isValid) {
   RESULT_TEXT.innerText = isValid ? "Valid card." : "Invalid card.";

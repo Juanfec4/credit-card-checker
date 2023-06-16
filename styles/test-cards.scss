@@ -1,0 +1,66 @@
+@import "./partials/_global.scss";
+
+.card-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    &__heading{
+        text-align: center;
+    }
+  &__grid-container {
+    margin-top: $margin-between-components-df;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: calc(2*$margin-between-components-df);
+    @include md{
+    grid-template-columns: repeat(2, 1fr);   
+    }
+    @include lg{
+        grid-template-columns: repeat(3, 1fr);  
+        width: max-content;
+    }
+  }
+  &__issuer-card {
+    height: auto;
+    background-color: $clr-surface-200;
+    padding: $padding-between-components-sm;
+    border-radius: $border-radius-result-card;
+    width: $width-credit-test-card;
+    min-height: $height-credit-test-card;
+  }
+  &__subheading{
+    text-align: center;
+    color: $clr-neutral-white;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 900;
+    @include md{
+        font-size: 1rem;
+    }
+    @include lg{
+        font-size: 1.75rem;
+    }
+  }
+  &__card-info{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+  &__copy-button{
+    color: $clr-surface-200;
+    background-color: $clr-primary-500;
+    font-size: 0.7rem;
+    height: 2rem;
+    width: auto;
+    &:hover{
+        background-color: $clr-primary-200;
+        transition: background-color 0.5s ease;
+    }
+  }
+  &__card-number{
+    text-align: center;
+  }
+}
