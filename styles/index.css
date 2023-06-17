@@ -200,22 +200,22 @@ h5 {
   }
 }
 
-p {
+p, ul, ol {
   font-family: "DM Sans", sans-serif;
   color: #ffffff;
 }
 @media (min-width: 0px) {
-  p {
+  p, ul, ol {
     font-size: 0.9rem;
   }
 }
 @media (min-width: 768px) {
-  p {
+  p, ul, ol {
     font-size: 1rem;
   }
 }
 @media (min-width: 1280px) {
-  p {
+  p, ul, ol {
     font-size: 1rem;
   }
 }
@@ -295,6 +295,14 @@ header {
     flex-direction: row;
     padding: 0 2rem;
   }
+}
+
+ul .li-spaced, ol .li-spaced {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+ul p, ul ul, ul ol, ol p, ol ul, ol ol {
+  margin: 0;
 }
 
 main {
@@ -424,6 +432,12 @@ main {
 .color-text {
   color: #ffffff;
   font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #c4acfd;
 }
 
 .credit-card {

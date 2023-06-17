@@ -145,6 +145,19 @@ header {
     padding: 0 $padding-between-components-lg;
   }
 }
+//list
+ul, ol{
+  @extend p;
+  .li-spaced{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  p{
+    margin: 0;
+  }
+}
+
+
 
 //Content
 main {
@@ -276,4 +289,9 @@ main {
 .color-text{
   color: $clr-neutral-white;
   font-style: italic;
+}
+.underline{
+  text-decoration: underline;
+  font-weight: bold;
+  color: $clr-primary-600;
 }
