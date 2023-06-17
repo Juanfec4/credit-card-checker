@@ -34,3 +34,4 @@ function copyTarget(){
 for(let issuer of getCardIssuers()){
     createIssuerCard(issuer,CARD_GALLERY);
 }
+console.log('hello');
