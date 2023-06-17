@@ -25,7 +25,6 @@ const MAJOR_INDUSTRY_IDENTIFIERS = {
   9: "For the appointment of national standards bodies",
 };
 
-
 function logResult(isValid) {
   RESULT_TEXT.innerText = isValid ? "Valid card." : "Invalid card.";
   RESULT_CARD.className = isValid
