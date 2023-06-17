@@ -15,6 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   @include sm {
+    width: calc(100vw - ($padding-between-components-sm * 2));
     max-width: fit-content;
     min-height: fit-content;
     max-height: calc($height-credit-card - 5rem);

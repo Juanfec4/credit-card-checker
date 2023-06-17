@@ -453,6 +453,7 @@ main {
 }
 @media (min-width: 0px) {
   .credit-card {
+    width: calc(100vw - 2rem);
     max-width: fit-content;
     min-height: fit-content;
     max-height: 15rem;
