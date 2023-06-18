@@ -22,14 +22,20 @@ https://credit-card-checker-s1ue.vercel.app/
 
 ## Screenshots
 
+Credit card validator (default state).
 <img src="assets/landing-default.png" width="500" aspect-ratio="16/9"/>
 
+Credit card validator (valid card).
 <img src="assets/landing-success.png" width="500" aspect-ratio="16/9"/>
 
+Credit card validator (invalid card).
 <img src="assets/landing-error.png" width="500" aspect-ratio="16/9"/>
 
+Documentation page.
 <img src="assets/faq.png" width="500" aspect-ratio="16/9"/>
 
+Fake Card numbers for testing.
 <img src="assets/test-numbers.png" width="500" aspect-ratio="16/9"/>
 
+Other Error States.
 <img src="assets/dynamic-error.png" width="500" aspect-ratio="16/9"/>
