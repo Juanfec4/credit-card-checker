@@ -5,7 +5,7 @@ A fully-responsive website that utilizes Luhn's Algorithm (mod. 10) to determine
 
 ## Other Functionality
 
-This tool also provides a documentation page within the site that explains how the algorithm works, and what each industry identifier corresponds to.
+This tool also provides a documentation page within the site that explains how the algorithm works and what each industry identifier corresponds to.
 
 
 
