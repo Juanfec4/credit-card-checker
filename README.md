@@ -22,14 +22,14 @@ https://credit-card-checker-s1ue.vercel.app/
 
 ## Screenshots
 
-![Landing Page](assets/landing-default.png)
+<img src="assets/landing-default.png" width="500" aspect-ratio="16/9"/>
 
-![Valid Card](assets/landing-success.png)
+<img src="assets/landing-success.png" width="500" aspect-ratio="16/9"/>
 
-![Invalid Card](assets/landing-error.png)
+<img src="assets/landing-error.png" width="500" aspect-ratio="16/9"/>
 
-![Algorithm](assets/faq.png)
+<img src="assets/faq.png" width="500" aspect-ratio="16/9"/>
 
-![Fake Card Numbers](assets/test-numbers.png)
+<img src="assets/test-numbers.png" width="500" aspect-ratio="16/9"/>
 
-![Dynamic Error Message](assets/dyamic-error.png)
+<img src="assets/dynamic-error.png" width="500" aspect-ratio="16/9"/>
