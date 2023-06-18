@@ -4,7 +4,7 @@
       "name": "American Express",
       "prefixNumbers": [34, 37],
       "lengths": [15],
-      "image": "./assets/logos/amex.png",
+      "image": "amex.png",
       "testCards": [
         371013685078853, 371025821052618, 371044577615551, 371063732388250,
         371023510178422
@@ -14,7 +14,7 @@
       "name": "Diner's Club",
       "prefixNumbers": [300, 301, 302, 303, 304, 305, 309, 36, 38, 39],
       "lengths": [14, 15],
-      "image": "./assets/logos/diners.png",
+      "image": "diners.png",
       "testCards": [
         30190779777617, 30036928610086, 30491681460148, 30342554667550,
         30418357445822
@@ -24,7 +24,7 @@
       "name": "Discover",
       "prefixNumbers": [6011, 64, 65, 622126, 622925],
       "lengths": [16],
-      "image": "./assets/logos/discover.png",
+      "image": "discover.png",
       "testCards": [
         6229252334306940, 6566847776158625, 6221260862065984, 6522356782067278,
         6229256164820037
@@ -34,7 +34,7 @@
       "name": "JCB",
       "prefixNumbers": [35, 3088, 3096, 3112, 3158, 3337],
       "lengths": [16],
-      "image": "./assets/logos/jcb.png",
+      "image": "jcb.png",
       "testCards": [
         3568647110622095, 3529120227557404, 3588811738340383, 3529034893910484,
         3588577480311043
@@ -44,7 +44,7 @@
       "name": "MasterCard",
       "prefixNumbers": [51, 52, 53, 54, 55],
       "lengths": [16],
-      "image": "./assets/logos/mastercard.png",
+      "image": "mastercard.png",
       "testCards": [
         5215759402641238, 5454084549356453, 5424329355767195, 5309413192083956,
         5273702266376144
@@ -54,7 +54,7 @@
       "name": "Visa",
       "prefixNumbers": [4],
       "lengths": [16, 19],
-      "image": "./assets/logos/visa.png",
+      "image": "visa.png",
       "testCards": [
         4994467374088343, 4960919014739529, 4777608872459063, 4833060294026470,
         4698923722383132

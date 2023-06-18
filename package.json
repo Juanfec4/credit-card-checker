@@ -7,9 +7,13 @@
     "dev": "parcel index.html",
     "build": "parcel build index.html"
   },
+  "staticFiles": {
+    "staticPath": ["assets/logos"]
+ },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-static-files-copy": "^2.6.0"
   }
 }
