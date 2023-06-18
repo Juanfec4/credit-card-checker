@@ -5,7 +5,7 @@ A fully-responsive website that utilizes Luhn's Algorithm (mod. 10) to determine
 
 ## Other Functionality
 
-This tool also provides a documentation page within the site that explains how the algorithm works, and what each industry identifier corresponds to.
+This tool also provides a documentation page within the site that explains how the algorithm works and what each industry identifier corresponds to.
 
 
 
@@ -22,14 +22,14 @@ https://credit-card-checker-s1ue.vercel.app/
 
 ## Screenshots
 
-![Landing Page](assets/landing-default.png)
+<img src="assets/landing-default.png" width="200" aspect-ratio="16/9"/>
 
-![Valid Card](assets/landing-success.png)
+<img src="assets/landing-success.png" width="200" aspect-ratio="16/9"/>
 
-![Invalid Card](assets/landing-error.png)
+<img src="assets/landing-error.png" width="200" aspect-ratio="16/9"/>
 
-![Algorithm](assets/faq.png)
+<img src="assets/faq.png" width="200" aspect-ratio="16/9"/>
 
-![Fake Card Numbers](assets/test-numbers.png)
+<img src="assets/card-numbers.png" width="200" aspect-ratio="16/9"/>
 
-![Dynamic Error Message](assets/dyamic-error.png)
+<img src="assets/dynamic-error.png" width="200" aspect-ratio="16/9"/>
